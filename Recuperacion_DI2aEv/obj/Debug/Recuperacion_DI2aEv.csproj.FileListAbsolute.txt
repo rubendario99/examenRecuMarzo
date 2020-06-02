@@ -1,0 +1,7 @@
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\bin\Debug\Recuperacion_DI2aEv.dll
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\bin\Debug\Recuperacion_DI2aEv.pdb
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\obj\Debug\Recuperacion_DI2aEv.BarraTimer.resources
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\obj\Debug\Recuperacion_DI2aEv.csproj.GenerateResource.cache
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\obj\Debug\Recuperacion_DI2aEv.dll
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\obj\Debug\Recuperacion_DI2aEv.pdb
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\Recuperacion_DI2aEv\obj\Debug\Recuperacion_DI2aEv.csprojAssemblyReference.cache

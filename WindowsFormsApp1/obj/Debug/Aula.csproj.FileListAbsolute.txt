@@ -1,0 +1,13 @@
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\bin\Debug\Recuperacion_DI2aEv.dll
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\bin\Debug\Recuperacion_DI2aEv.pdb
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\Aula.csprojAssemblyReference.cache
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\Aula.csproj.GenerateResource.cache
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\Aula.csproj.CopyComplete
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\ruchi\source\repos\Recuperacion_DI2aEv\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmDatos.resources
