@@ -35,9 +35,9 @@
             this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.añadirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.barraTimer1 = new Recuperacion_DI2aEv.BarraTimer();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.chkAnimacion = new System.Windows.Forms.CheckBox();
+            this.barraTimer1 = new Recuperacion_DI2aEv.BarraTimer();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,18 +93,6 @@
             this.mostrarToolStripMenuItem.Text = "Mostrar";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
-            // barraTimer1
-            // 
-            this.barraTimer1.ActivoTmr = false;
-            this.barraTimer1.IntervaloTmr = 100;
-            this.barraTimer1.Location = new System.Drawing.Point(23, 26);
-            this.barraTimer1.Manual = false;
-            this.barraTimer1.Max = 100;
-            this.barraTimer1.Name = "barraTimer1";
-            this.barraTimer1.Size = new System.Drawing.Size(215, 43);
-            this.barraTimer1.TabIndex = 0;
-            this.barraTimer1.Valor = 0;
-            // 
             // chkAnimacion
             // 
             this.chkAnimacion.AutoSize = true;
@@ -115,6 +103,18 @@
             this.chkAnimacion.Text = "Animacion";
             this.chkAnimacion.UseVisualStyleBackColor = true;
             this.chkAnimacion.CheckedChanged += new System.EventHandler(this.chkAnimacion_CheckedChanged);
+            // 
+            // barraTimer1
+            // 
+            this.barraTimer1.ActivoTmr = false;
+            this.barraTimer1.IntervaloTmr = 100;
+            this.barraTimer1.Location = new System.Drawing.Point(23, 26);
+            this.barraTimer1.Manual = false;
+            this.barraTimer1.Max = 100;
+            this.barraTimer1.Name = "barraTimer1";
+            this.barraTimer1.Size = new System.Drawing.Size(215, 43);
+            this.barraTimer1.TabIndex = 0;
+            this.barraTimer1.Valor = 76;
             // 
             // Form1
             // 

@@ -54,7 +54,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lbl);
             this.Name = "BarraTimer";
-            this.Size = new System.Drawing.Size(215, 43);
+            this.Size = new System.Drawing.Size(223, 43);
             this.ResumeLayout(false);
             this.PerformLayout();
 

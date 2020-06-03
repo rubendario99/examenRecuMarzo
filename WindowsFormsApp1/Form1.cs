@@ -14,23 +14,21 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         List<Alumno> alumnos = new List<Alumno>();
-        bool animacion = false;
         public Form1()
         {
             InitializeComponent();
-            Alumno alumno1 = new Alumno("ruben", 8);
-            Alumno alumno2 = new Alumno("laura", 6);
-            Alumno alumno3 = new Alumno("diego", 3);
-            Alumno alumno4 = new Alumno("ivan", 10);
-            Alumno alumno5 = new Alumno("nombredemasdeveintecaracteres", 8); //nombredemasdeveintec
-            Alumno alumno6 = new Alumno("daniel", 5);
-            Alumno alumno7 = new Alumno("juan", 6);
-            Alumno alumno8 = new Alumno("maria", 5);
-            Alumno alumno9 = new Alumno("hermenegildo", 4);
-            Alumno alumno10 = new Alumno("heliodoro", 7);
-            Alumno alumno11 = new Alumno("cristina", 9);
-            Alumno alumno12 = new Alumno("troy", 2);
-
+            Alumno alumno1 = new Alumno("ruben", 80);
+            Alumno alumno2 = new Alumno("laura", 65);
+            Alumno alumno3 = new Alumno("diego", 33);
+            Alumno alumno4 = new Alumno("ivan", 17);
+            Alumno alumno5 = new Alumno("nombredemasdeveintecaracteres", 81); //nombredemasdeveintec
+            Alumno alumno6 = new Alumno("daniel", 58);
+            Alumno alumno7 = new Alumno("juan", 63);
+            Alumno alumno8 = new Alumno("maria", 52);
+            Alumno alumno9 = new Alumno("hermenegildo", 47);
+            Alumno alumno10 = new Alumno("heliodoro", 74);
+            Alumno alumno11 = new Alumno("cristina", 96);
+            Alumno alumno12 = new Alumno("troy", 21);
 
             alumnos.Add(alumno1);
             alumnos.Add(alumno2);
@@ -50,7 +48,6 @@ namespace WindowsFormsApp1
                 listBox1.Items.Add(alumno);
             }
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedItems.Count > 1)
@@ -65,7 +62,6 @@ namespace WindowsFormsApp1
                 toolTip1.SetToolTip(listBox1, String.Format("Nombre: {0}\nNota: {1}", nombre, nota));
             }
         }
-
         private void borrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int i = listBox1.SelectedIndices.Count - 1; i >= 0; i--)
@@ -73,13 +69,13 @@ namespace WindowsFormsApp1
                 alumnos.RemoveAt(listBox1.SelectedIndices[i]);
                 listBox1.Items.RemoveAt(listBox1.SelectedIndices[i]);
             }
-        }
+            toolTip1.SetToolTip(listBox1, "");
 
+        }
         private void añadirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmDatos frmDatos = new FrmDatos();
             DialogResult dialogResult = frmDatos.ShowDialog();
-
             switch (dialogResult)
             {
                 case DialogResult.OK:
@@ -90,11 +86,9 @@ namespace WindowsFormsApp1
                     Alumno alumno = new Alumno(nombre, nota);
                     alumnos.Add(alumno);
                     listBox1.Items.Add(alumno);
-
                     break;
             }
         }
-
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form form2 = new Form();
@@ -104,7 +98,7 @@ namespace WindowsFormsApp1
             int y = 0;
             int columna = 0;
 
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            for (int i = 0; i < listBox1.Items.Count; i++)  
             {
                 string nombreAlumno = listBox1.Items[i].ToString();
                 int notaAlumno = alumnos[i].Nota;
@@ -123,10 +117,10 @@ namespace WindowsFormsApp1
                 barraTimer.Name = "barraTimer" + i;
                 barraTimer.Size = new System.Drawing.Size(100, 100);
                 barraTimer.IntervaloTmr = 100;
-                barraTimer.Max = notaAlumno*10;
+                barraTimer.Max = notaAlumno;              
                 barraTimer.ActivoTmr = true;
 
-                if (animacion)
+                if (chkAnimacion.Checked)
                 {
                     barraTimer.Manual = false;
                     barraTimer.Valor = 0;
@@ -155,17 +149,9 @@ namespace WindowsFormsApp1
 
             form2.Show();
         }
-
         private void chkAnimacion_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkAnimacion.Checked)
-            {
-                animacion = true;
-            }
-            else
-            {
-                animacion = false;
-            }
+ 
         }
     }
 }

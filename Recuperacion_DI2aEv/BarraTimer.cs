@@ -72,11 +72,13 @@ namespace Recuperacion_DI2aEv
                 }
                 if (valor == Max)
                 {
-                    LimiteAlcanzado?.Invoke(this,EventArgs.Empty);
+                    LimiteAlcanzado?.Invoke(this, EventArgs.Empty);
                     tmr.Enabled = false;
                 }
 
-                lbl.Text = "Valor: " + valor;
+                string textoLabel = String.Format("{0,4}", valor);
+
+                lbl.Text = textoLabel;
             }
             get
             {
@@ -138,16 +140,18 @@ namespace Recuperacion_DI2aEv
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            Pen pen = new Pen(new SolidBrush(this.ForeColor),this.FontHeight);
-            e.Graphics.DrawLine(pen, lbl.Width + 10, lbl.Location.Y+7, this.Width-10, lbl.Location.Y+7);
+            Pen pen = new Pen(new SolidBrush(this.ForeColor), this.FontHeight);
+            //e.Graphics.DrawLine(pen, lbl.Width + 10, lbl.Location.Y + 7, this.Width - 10, lbl.Location.Y + 7);
+            e.Graphics.DrawLine(pen, lbl.Width + 10, lbl.Location.Y + 7, lbl.Width+valor, lbl.Location.Y + 7);
         }
 
         private void tmr_Tick(object sender, EventArgs e)
         {
-            if(ActivoTmr && Manual == false)
+            if (Manual == false)
             {
                 Valor++;
             }
+            this.Refresh();
         }
     }
 }
